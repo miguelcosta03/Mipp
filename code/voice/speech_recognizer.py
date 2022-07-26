@@ -14,7 +14,3 @@ class SpeechRecognizer:
             print(f'You said: {self.recognizer.recognize_google(audio, language="en")}')
         except sr.UnknownValueError:
             print('Could not understand what you said.')
-
-
-sp = SpeechRecognizer()
-sp.recognize()
